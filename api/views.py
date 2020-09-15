@@ -60,7 +60,7 @@ class EmployeeAPIView(APIView):
             })
 
         serializer = EmployeeDeSerializer(data=user_data)
-        # print(serializer)
+        print(serializer)
 
 
         if serializer.is_valid():
