@@ -25,5 +25,6 @@ urlpatterns = [
     # 静态资源目录配置
     url(r'^media/(?P<path>.*)', serve, {"document_root": settings.MEDIA_ROOT}),
     path("api/", include("api.urls")),
+    path("app/", include("app.urls")),
 
 ]
