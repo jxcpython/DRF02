@@ -65,7 +65,7 @@ class EmployeeAPIView(APIView):
 
         if serializer.is_valid():
             emp_obj = serializer.save()
-            # print(emp_obj, "this is obj", type(emp_obj))
+            print(emp_obj, "this is obj", type(emp_obj))
 
             return Response({
                 "status": status.HTTP_200_OK,
